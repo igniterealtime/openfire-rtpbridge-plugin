@@ -1,4 +1,4 @@
-package org.jivesoftware.wildfire.mediaproxy;
+package org.jivesoftware.openfire.mediaproxy;
 
 import org.jivesoftware.util.Log;
 

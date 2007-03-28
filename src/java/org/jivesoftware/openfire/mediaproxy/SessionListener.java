@@ -8,7 +8,7 @@
  * a copy of which is included in this distribution.
  */
 
-package org.jivesoftware.wildfire.mediaproxy;
+package org.jivesoftware.openfire.mediaproxy;
 
 /**
  * Listener for media proxy session events.

@@ -7,7 +7,7 @@
  * This software is published under the terms of the GNU Public License (GPL),
  * a copy of which is included in this distribution.
  */
-package org.jivesoftware.wildfire.mediaproxy;
+package org.jivesoftware.openfire.mediaproxy;
 
 import java.io.IOException;
 import java.net.*;

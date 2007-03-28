@@ -8,21 +8,21 @@
  * a copy of which is included in this distribution.
  */
 
-package org.jivesoftware.wildfire.mediaproxy;
+package org.jivesoftware.openfire.mediaproxy;
 
 import org.dom4j.Attribute;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.jivesoftware.util.JiveGlobals;
 import org.jivesoftware.util.Log;
-import org.jivesoftware.wildfire.*;
-import org.jivesoftware.wildfire.auth.UnauthorizedException;
-import org.jivesoftware.wildfire.container.BasicModule;
-import org.jivesoftware.wildfire.disco.DiscoInfoProvider;
-import org.jivesoftware.wildfire.disco.DiscoItemsProvider;
-import org.jivesoftware.wildfire.disco.DiscoServerItem;
-import org.jivesoftware.wildfire.disco.ServerItemsProvider;
-import org.jivesoftware.wildfire.forms.spi.XDataFormImpl;
+import org.jivesoftware.openfire.*;
+import org.jivesoftware.openfire.auth.UnauthorizedException;
+import org.jivesoftware.openfire.container.BasicModule;
+import org.jivesoftware.openfire.disco.DiscoInfoProvider;
+import org.jivesoftware.openfire.disco.DiscoItemsProvider;
+import org.jivesoftware.openfire.disco.DiscoServerItem;
+import org.jivesoftware.openfire.disco.ServerItemsProvider;
+import org.jivesoftware.openfire.forms.spi.XDataFormImpl;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.JID;
 import org.xmpp.packet.Packet;
