@@ -20,7 +20,7 @@
 <%@ page import="org.jivesoftware.util.ParamUtils" %>
 <%@ page import="org.jivesoftware.util.CookieUtils" %>
 <%@ page import="org.jivesoftware.util.StringUtils" %>
-<%@ page import="org.jivesoftware.openfire.XMPPServer" %>
+<%@ page import="org.jivesoftware.openfire.mediaproxy.RTPBridgePlugin" %>
 <%@ page import="org.jivesoftware.openfire.mediaproxy.MediaProxyService" %>
 <%@ page import="org.jivesoftware.openfire.mediaproxy.MediaProxySession" %>
 <%@ page import="org.jivesoftware.openfire.mediaproxy.RelaySession" %>
@@ -34,7 +34,7 @@
 
 <%
 
-    MediaProxyService mediaProxyService = XMPPServer.getInstance().getMediaProxyService();
+    MediaProxyService mediaProxyService = RTPBridgePlugin.getInstance().getMediaProxyService();
 
     boolean stop = request.getParameter("stop") != null;
     boolean save = request.getParameter("update") != null;

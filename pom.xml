@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.igniterealtime.openfire</groupId>
+        <artifactId>plugins</artifactId>
+        <version>5.1.2</version>
+    </parent>
+
+    <groupId>org.igniterealtime.openfire.plugins</groupId>
+    <artifactId>rtpbridge</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>RTP Bridge</name>
+    <description>Restores the Media Proxy that was removed from Openfire in version 5.2.0. This is only needed for clients that use the voice call functionality of older versions of Spark. No other clients are known to use it.</description>
+
+    <developers>
+        <developer>
+            <name>Ignite Realtime</name>
+            <url>https://www.igniterealtime.org</url>
+        </developer>
+    </developers>
+
+    <build>
+        <sourceDirectory>src/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+            </plugin>
+            <!-- Compiles the Openfire Admin Console JSP pages. -->
+            <plugin>
+                <groupId>org.eclipse.jetty.ee8</groupId>
+                <artifactId>jetty-ee8-jspc-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <!-- Here, we get our dependencies, like the parent project. -->
+        <repository>
+            <id>igniterealtime</id>
+            <name>Ignite Realtime Repository</name>
+            <url>https://igniterealtime.org/archiva/repository/maven/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <!-- Used for the dependencies used by the plugins that we'll use. -->
+        <pluginRepository>
+            <id>igniterealtime</id>
+            <name>Ignite Realtime Repository</name>
+            <url>https://igniterealtime.org/archiva/repository/maven/</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
